@@ -5,99 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natnael - Portfolio</title>
     <link rel="icon" href="./images/logo.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="./styles/services.css" />
   </head>
   <body>
-    <nav aria-label="Main Navigation">
-      <h2>Natnael Yohanes</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section>
-        <div>
-          <h4>Services</h4>
-          <h2>What I Can Do</h2>
+    <header class="hero-section">
+      <nav class="navbar">
+        <div class="logo">Natnael Yohanes</div>
+        <ul class="nav-links" id="menu__list">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Services.html">Service</a></li>
+          <li><a href="./Projects.html">Projects</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <img
+            src="./images/icons/bars-solid.svg"
+            alt="bars-solid"
+            onclick="toggleMenu()"
+          />
         </div>
-        <div>
-          <img src="./images/icons/laptop-solid.svg" alt="laptop" />
-          <h4>Web Design</h4>
+      </nav>
+    </header>
+
+    <main class="services-section">
+      <div class="services-header">
+        <h2>Services</h2>
+        <p>What can I do?</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="./images/icons/laptop-solid.svg" alt="laptop-solid" />
+          </div>
+          <h3>Web Design</h3>
           <p>
-            Designed responsive web applications using HTML,CSS and JavaScript,
+            Designed responsive web applications using HTML, CSS and JavaScript,
             increasing user satisfaction.
           </p>
         </div>
-        <div>
-          <img src="./images/icons/gears-solid.svg" alt="laptop" />
-          <h4>Web Development</h4>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="./images/icons/gears-solid.svg" alt="gears-solid" />
+          </div>
+          <h3>Web Development</h3>
           <p>
-            Developed responsive web applications using HTML,CSS and JavaScript,
-            increasing user satisfaction.
+            Developed responsive web applications using HTML, CSS and
+            JavaScript, increasing user satisfaction.
           </p>
         </div>
-        <div>
-          <img src="./images/icons/mobile-screen-solid.svg" alt="laptop" />
-          <h4>Responsive Design</h4>
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="./images/icons/mobile-screen-solid.svg"
+              alt="mobile-screen-solid"
+            />
+          </div>
+          <h3>Responsive Design</h3>
           <p>
-            Optimized website performance by identifiying and refactoring
+            Optimized website performance by identifying and refactoring
             inefficient code.
           </p>
         </div>
-        <div>
-          <img src="./images/icons/rocket-solid.svg" alt="laptop" />
-          <h4>Branding Identity</h4>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="./images/icons/rocket-solid.svg" alt="rocket-solid.svg" />
+          </div>
+          <h3>Branding Identity</h3>
           <p>
             Managed the software development life-cycle for a major project,
             ensuring timely delivery and meeting all project milestones.
           </p>
         </div>
-        <div>
-          <img src="./images/icons/pencil-solid.svg" alt="laptop" />
-          <h4>Creative Design</h4>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="./images/icons/phone-solid.svg" alt="pencil-solid.svg" />
+          </div>
+          <h3>Creative Design</h3>
           <p>Developed a personal portfolio website and design expertise.</p>
         </div>
-        <div>
-          <img src="./images/icons/people-group-solid.svg" alt="laptop" />
-          <h4>Support</h4>
+        <div class="service-card">
+          <div class="service-icon">
+            <img
+              src="./images/icons/people-group-solid.svg"
+              alt="people-group-solid.svg"
+            />
+          </div>
+          <h3>Support</h3>
           <p>
-            Collaborated with a team of designers and backend developers to
+            Collaborated with a team of designers and back-end developers to
             create a customer-facing web application.
           </p>
         </div>
-      </section>
+      </div>
     </main>
 
-    <!-- Footer Section -->
     <footer>
-      <section>
+      <div class="footer-info">
         <div>
           <h5>Natnael Yohanes</h5>
           <p>Software Engineer</p>
         </div>
         <div>
           <h5>Phone No.</h5>
-          <p>
-            <a href="tel:+251969429408">(+251) 969429408</a>
-          </p>
+          <p>(+251) 969429408</p>
         </div>
         <div>
           <h5>Email</h5>
-          <p>
-            <a href="mailto:mataniayohanes@gmail.com"
-              >mataniayohanes@gmail.com</a
-            >
-          </p>
+          <p>mataniayohanes@gmail.com</p>
         </div>
         <div>
           <h5>Address</h5>
           <p>Addis Ababa, Ethiopia</p>
         </div>
-      </section>
-      <div>
+      </div>
+      <div class="social-links">
         <a
           href="https://www.linkedin.com/in/natnael-yohanes-163ba02b6"
           target="_blank"
@@ -124,5 +146,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

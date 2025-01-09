@@ -5,45 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natnael - Portfolio</title>
     <link rel="icon" href="./images/logo.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="./styles/home.css" />
   </head>
   <body>
-    <nav aria-label="Main Navigation">
-      <h2>Natnael Yohanes</h2>
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </nav>
-    <header>
-      <section>
+    <header class="hero-section">
+      <nav class="navbar">
+        <div class="logo">Natnael Yohanes</div>
+        <ul class="nav-links" id="menu__list">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Services.html">Service</a></li>
+          <li><a href="./Projects.html">Projects</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <img
+            src="./images/icons/bars-solid.svg"
+            alt="bars-solid"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </nav>
+      <div class="hero-content">
         <h1>Hi! I'm Natnael</h1>
         <p>Full-Stack Developer specialized in creating websites</p>
-        <button type="button">See Projects</button>
-      </section>
+        <a href="./Projects.html" class="btn">See Projects</a>
+      </div>
     </header>
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <table>
-          <tr>
-            <td>Name</td>
-            <td>Natnael Yohanes</td>
-          </tr>
-          <tr>
-            <td>Location</td>
-            <td>Addis Ababa, Ethiopia</td>
-          </tr>
-          <tr>
-            <td>University</td>
-            <td>Addis Ababa University</td>
-          </tr>
-        </table>
 
-        <h3>Skills</h3>
-        <table>
+    <section class="skills-projects-section">
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2" class="section-title">Skills</td>
+          </tr>
           <tr>
             <td>Python</td>
             <td>Intermediate</td>
@@ -53,95 +54,92 @@
             <td>Intermediate</td>
           </tr>
           <tr>
-            <td>Web Development (MERN)</td>
+            <td>Web Dev (MERN)</td>
             <td>Intermediate</td>
           </tr>
           <tr>
             <td>DSA</td>
-            <td>Learning</td>
+            <td>Intermediate</td>
           </tr>
-        </table>
-
-        <h3>Projects</h3>
-        <table>
           <tr>
-            <td>Amazon React Clone</td>
+            <td colspan="2" class="section-title">Projects</td>
+          </tr>
+          <tr>
+            <td>Amazon React</td>
             <td>
               A replica of Amazon's website using React, Redux, and API
               integration.
             </td>
           </tr>
           <tr>
-            <td>TruthTableGUI</td>
+            <td>TruthTable Generator</td>
             <td>
               Java project for generating truth tables with a graphical user
               interface.
             </td>
           </tr>
           <tr>
-            <td>To-Do List App</td>
-            <td>
-              Java-based application for managing tasks with custom classes.
-            </td>
+            <td>Text-Genius</td>
+            <td>Next.js and TypeScript with Gemini-API Text Generator.</td>
           </tr>
-        </table>
-
-        <h3>Interests</h3>
-        <table>
           <tr>
-            <td>Sketching</td>
-            <td>Creating detailed portraits.</td>
+            <td colspan="2" class="section-title">Interests</td>
           </tr>
           <tr>
             <td>Music</td>
-            <td>
-              Learning traditional instruments like Begena and intoning hymns.
-            </td>
+            <td>Creating detailed portraits.</td>
           </tr>
           <tr>
             <td>Chess</td>
             <td>Engaging in strategy games and improving skills.</td>
           </tr>
-        </table>
-      </section>
-      <section>
-        <div>
-          <h3>Statistics</h3>
-          <ul>
-            <li>10 Open-Source Contributions</li>
-            <li>5 Projects Completed</li>
-            <li>15 Years of Experience</li>
-            <li>12 Awards Achieved</li>
-          </ul>
-        </div>
-      </section>
-    </main>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat">
+        <img src="./images/icons/thumbs-up-regular.svg" alt="Thumbs Up" />
+        <p>7</p>
+        <span>Projects Completed</span>
+      </div>
+      <div class="stat">
+        <img src="./images/icons/pen-to-square-regular.svg" alt="Thumbs Up" />
+        <p>2</p>
+        <span>Years Experience</span>
+      </div>
+      <div class="stat">
+        <img src="./images/icons/user-svgrepo-com.svg" alt="Thumbs Up" />
+        <p>2</p>
+        <span>Open Source Projects</span>
+      </div>
+      <div class="stat">
+        <img src="./images/icons/trophy-solid.svg" alt="Thumbs Up" />
+        <p>3</p>
+        <span>Awards</span>
+      </div>
+    </section>
+
     <footer>
-      <section>
+      <div class="footer-info">
         <div>
           <h5>Natnael Yohanes</h5>
           <p>Software Engineer</p>
         </div>
         <div>
           <h5>Phone No.</h5>
-          <p>
-            <a href="tel:+251969429408">(+251) 969429408</a>
-          </p>
+          <p>(+251) 969429408</p>
         </div>
         <div>
           <h5>Email</h5>
-          <p>
-            <a href="mailto:mataniayohanes@gmail.com"
-              >mataniayohanes@gmail.com</a
-            >
-          </p>
+          <p>mataniayohanes@gmail.com</p>
         </div>
         <div>
           <h5>Address</h5>
           <p>Addis Ababa, Ethiopia</p>
         </div>
-      </section>
-      <div>
+      </div>
+      <div class="social-links">
         <a
           href="https://www.linkedin.com/in/natnael-yohanes-163ba02b6"
           target="_blank"
@@ -168,5 +166,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

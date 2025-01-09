@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #f6f6f6;
+  background-color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #5d5d5d;
+}
+
+.menu-icon {
+  width: 3rem;
+  display: none;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("../images/back-img.png") no-repeat center center;
+  background-size: 100% 100%; /* Ensures the entire image is visible without zooming */
+  .contrast {
+    filter: contrast(10%);
+  }
+  .brightness {
+    filter: brightness(0.15);
+  }
+  height: 36rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-top: 7rem;
+}
+
+.hero-content h1 {
+  margin-left: 2rem;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 7rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 2rem;
+  color: #bbb;
+  font-weight: 600;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  margin-right: 28rem;
+  padding: 1rem 1.8rem;
+  background-color: #222;
+  color: #f6f6f6;
+  text-decoration: none;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #f6f6f6;
+  color: #222;
+}
+
+/* Info Table */
+.info-table {
+  font-size: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #222;
+}
+
+.info-table thead {
+  background: #bbb;
+}
+
+.info-table th,
+.info-table td {
+  padding: 0.8rem;
+  border: 1px solid #fff;
+}
+
+.info-table th {
+  text-align: left;
+  color: #222;
+}
+
+.section-title {
+  background: #bbb;
+  color: #222;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background: url("../images/stats-bg.jpg") no-repeat center center/cover;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.stat p {
+  color: #f6f6f6;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.stat span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-info {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #bbb;
+}
+.social-links {
+  margin-top: 2rem;
+}
+.footer-info p {
+  margin: 0.5rem 0;
+}
+
+.social-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.social-links a img {
+  width: 4rem;
+  height: 4rem;
+  filter: grayscale(100%);
+}
+
+.social-links a:hover {
+  color: #222;
+}
+
+/* General styles are as before */
+
+/* Responsive Styles */
+
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0.8rem 1.5rem;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #222;
+    gap: 0;
+  }
+  nav ul li {
+    padding: 0.3rem;
+  }
+  .menu-icon {
+    /* width: 3rem; */
+    display: block;
+  }
+  #menu__list {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    margin-right: 18rem;
+  }
+
+  .info-table {
+    font-size: 1.8rem;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .stat img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .stat p {
+    font-size: 1.8rem;
+  }
+
+  .stat span {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-left: 1rem;
+    margin-top: 5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+
+  .btn {
+    margin-right: 12rem;
+    font-size: 1.8rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .info-table {
+    font-size: 1.6rem;
+  }
+
+  .stats-section {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+  }
+  .social-links a img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Mobile Landscape (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    height: 25rem;
+  }
+
+  .hero-content {
+    margin-top: 4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    margin-right: 6rem;
+  }
+
+  .info-table {
+    font-size: 1.4rem;
+  }
+
+  .stat img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .stat p {
+    font-size: 1.5rem;
+  }
+
+  .stat span {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+  .social-links a img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Mobile Portrait (320px and below) */
+@media (max-width: 320px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-right: 3rem;
+  }
+
+  .info-table {
+    font-size: 1.2rem;
+  }
+
+  .stat img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .stat p {
+    font-size: 1.2rem;
+  }
+
+  .stat span {
+    font-size: 1rem;
+  }
+  .social-links a img {
+    width: 3rem;
+    height: 3rem;
+  }
+}

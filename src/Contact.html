@@ -5,126 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natnael - Portfolio</title>
     <link rel="icon" href="./images/logo.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="./styles/contact.css" />
   </head>
   <body>
-    <nav aria-label="Main Navigation">
-      <h2>Natnael Yohanes</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <main>
-      <!-- Contact Section -->
-      <section>
-        <h3>Contact Info</h3>
-        <div>
-          <div>
-            <img src="./images/icons/phone-solid.svg" alt="Phone Icon" />
-            <p>(+251) 969429408</p>
-          </div>
-          <div>
-            <img src="./images/icons/envelope-solid.svg" alt="Email Icon" />
-            <p>mataniayohanes@gmail.com</p>
-          </div>
-          <div>
-            <img
-              src="./images/icons/location-dot-solid.svg"
-              alt="Location Icon"
-            />
-            <p>Addis Ababa, Ethiopia</p>
-          </div>
+    <header class="hero-section">
+      <nav class="navbar">
+        <div class="logo">Natnael Yohanes</div>
+        <ul class="nav-links" id="menu__list">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Services.html">Service</a></li>
+          <li><a href="./Projects.html">Projects</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <img
+            src="./images/icons/bars-solid.svg"
+            alt="bars-solid"
+            onclick="toggleMenu()"
+          />
         </div>
-      </section>
+      </nav>
+    </header>
 
-      <!-- Form Section -->
-      <section>
-        <h3>Contact me</h3>
-        <form action="#" method="POST">
-          <div>
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div>
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="contact">Contact Number:</label><br />
-            <input type="tel" id="contact" name="contact" required />
-          </div>
-          <div>
-            <label for="suggestions">How can I help?:</label><br />
-            <textarea
-              id="suggestions"
-              name="suggestions"
-              rows="5"
-              placeholder="Enter your suggestions here..."
-              required
-            ></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
+    <section class="contact-section">
+      <h2>Contact</h2>
 
-    <!-- Footer Section -->
+      <div class="contact-details">
+        <div class="detail">
+          <img
+            src="./images//icons/mobile-screen-solid.svg"
+            alt="mobile-screen-solid"
+          />
+          <h3>PhoneNumber</h3>
+          <p>+25196429408</p>
+        </div>
+        <div class="detail">
+          <img
+            src="./images//icons/envelope-solid.svg"
+            alt="Email envelope-solid"
+          />
+          <h3>Email</h3>
+          <p>mataniayohanes@gmail.com</p>
+        </div>
+        <div class="detail">
+          <img
+            src="./images//icons/location-dot-solid.svg"
+            alt="location-dot-solid"
+          />
+          <h3>Address</h3>
+          <p>Addis Ababa, Ethiopia</p>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your Email" />
+          <label for="contact">Contact</label>
+          <input
+            type="text"
+            id="contact"
+            placeholder="Enter your PhoneNumber"
+          />
+        </div>
+        <div class="form-group suggestions">
+          <label for="suggestions">Suggestions</label>
+          <textarea
+            id="suggestions"
+            placeholder="Enter your suggestions here..."
+          ></textarea>
+        </div>
+      </form>
+      <button type="submit" class="submit-btn">Submit</button>
+    </section>
+
     <footer>
-      <section>
+      <div class="footer-info">
         <div>
           <h5>Natnael Yohanes</h5>
           <p>Software Engineer</p>
         </div>
         <div>
           <h5>Phone No.</h5>
-          <p>
-            <a href="tel:+251969429408">(+251) 969429408</a>
-          </p>
+          <p>(+251) 969429408</p>
         </div>
         <div>
           <h5>Email</h5>
-          <p>
-            <a href="mailto:mataniayohanes@gmail.com"
-              >mataniayohanes@gmail.com</a
-            >
-          </p>
+          <p>mataniayohanes@gmail.com</p>
         </div>
         <div>
           <h5>Address</h5>
           <p>Addis Ababa, Ethiopia</p>
         </div>
-      </section>
-      <div>
+      </div>
+      <div class="social-links">
         <a
           href="https://www.linkedin.com/in/natnael-yohanes-163ba02b6"
           target="_blank"
         >
-          <img
-            src="./images/icons/linkedin-brands-solid.svg"
-            alt="LinkedIn Profile"
-          />
+          <img src="./images/icons/linkedin-brands-solid.svg" alt="LinkedIn" />
         </a>
         <a href="https://wa.me/+251969429408" target="_blank">
-          <img
-            src="./images/icons/whatsapp-brands-solid.svg"
-            alt="WhatsApp Contact"
-          />
+          <img src="./images/icons/whatsapp-brands-solid.svg" alt="WhatsApp" />
         </a>
         <a href="https://github.com/Nama21yo/" target="_blank">
-          <img
-            src="./images/icons/github-brands-solid.svg"
-            alt="GitHub Profile"
-          />
+          <img src="./images/icons/github-brands-solid.svg" alt="GitHub" />
         </a>
         <a href="https://discordapp.com/users/natnael05273" target="_blank">
-          <img
-            src="./images/icons/discord-brands-solid.svg"
-            alt="Discord Profile"
-          />
+          <img src="./images/icons/discord-brands-solid.svg" alt="Discord" />
         </a>
         <a
           href="https://x.com/nama21yo?t=DNFSYpiAMyB9yES5rbS9Lw&s=09"
@@ -132,10 +123,11 @@
         >
           <img
             src="./images/icons/square-x-twitter-brands-solid.svg"
-            alt="Twitter Profile"
+            alt="Twitter"
           />
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
