@@ -5,128 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natnael - Portfolio</title>
     <link rel="icon" href="./images/logo.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="./styles/about.css" />
   </head>
   <body>
-    <nav aria-label="Main Navigation">
-      <h2>Natnael Yohanes</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <header class="hero-section">
+      <nav class="navbar">
+        <div class="logo">Natnael Yohanes</div>
+        <ul class="nav-links" id="menu__list">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Services.html">Service</a></li>
+          <li><a href="./Projects.html">Projects</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <img
+            src="./images/icons/bars-solid.svg"
+            alt="bars-solid"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </nav>
+    </header>
 
-    <main>
-      <!-- Personal Photo Section -->
-      <div id="home">
-        <figure>
+    <main class="about-me-section">
+      <div class="container">
+        <!-- Profile Image -->
+
+        <figure class="profile-card">
           <img
             src="./images/personal-photo.jpg"
             alt="Photo of Natnael Yohanes"
           />
-          <figcaption>Natnael Yohanes</figcaption>
+          <figcaption class="title">Software Engineer</figcaption>
         </figure>
-      </div>
 
-      <!-- About Section -->
-      <section id="about">
-        <div>
+        <!-- About Me Content -->
+        <div class="about-content">
           <h2>About Me</h2>
-          <span>Full-Stack Developer</span>
-        </div>
-        <div>
-          <h3>Audio Introduction</h3>
-          <audio controls>
-            <source src="./audio/intro.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <p>
-          I'm <strong>Natnael Yohanes</strong>, a hardworking, highly motivated,
-          disciplined, and creative student with excellent study skills and a
-          strong academic record. I am currently specializing in front-end and
-          back-end development.
-        </p>
-        <p>
-          My vision for the future is to work as a
-          <strong>Software Engineer</strong> and to start my own organization to
-          provide technological support and implement impactful projects.
-        </p>
-        <h3>My Skills</h3>
-        <ul>
-          <li>Python - Intermediate</li>
-          <li>Java - Intermediate</li>
-          <li>Web Development (MERN Stack) - Intermediate</li>
-          <li>Data Structures and Algorithms - Proficient</li>
-        </ul>
-        <div>
-          <h3>Connect with Me</h3>
-          <a
-            href="https://www.linkedin.com/in/natnael-yohanes-163ba02b6"
-            target="_blank"
+          <h3>Full-Stack Engineer</h3>
+          <div class="audio-player">
+            <audio id="song">
+              <source src="./audio/intro.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="audio-timeline">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress__audio" value="0" />
+            <span id="total-duration">0:00</span>
+          </div>
+          <div class="audio-controls">
+            <button id="backward">
+              <img
+                src="./images/icons/backward-step-solid.svg"
+                alt="backward"
+              />
+            </button>
+            <button id="ctrlIcon" onclick="playPause()">
+              <img
+                src="./images/icons/play-solid.svg"
+                alt="play"
+                class="fa-play"
+              />
+              <img
+                src="./images/icons/pause-solid.svg"
+                alt="pause"
+                class="fa-pause hidden"
+              />
+            </button>
+            <button id="forward">
+              <img src="./images/icons/forward-step-solid.svg" alt="forward" />
+            </button>
+          </div>
+          <p>
+            I'm <strong>Natnael Yohanes</strong>, a hardworking, highly
+            motivated, disciplined, and creative student with excellent study
+            skills and a strong academic record. I am currently specializing in
+            front-end and back-end development.
+          </p>
+          <h4>My Skills:</h4>
+          <ul>
+            <li>Python - Intermediate</li>
+            <li>Java - Intermediate</li>
+            <li>Web Development (MERN Stack) - Intermediate</li>
+            <li>Data Structures and Algorithms - Proficient</li>
+          </ul>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/natnael-yohanes-163ba02b6"
+              target="_blank"
+            >
+              <img
+                src="./images/icons/linkedin-brands-solid.svg"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="https://wa.me/+251969429408" target="_blank">
+              <img
+                src="./images/icons/whatsapp-brands-solid.svg"
+                alt="WhatsApp"
+              />
+            </a>
+            <a href="https://github.com/Nama21yo/" target="_blank">
+              <img src="./images/icons/github-brands-solid.svg" alt="GitHub" />
+            </a>
+            <a href="https://discordapp.com/users/natnael05273" target="_blank">
+              <img
+                src="./images/icons/discord-brands-solid.svg"
+                alt="Discord"
+              />
+            </a>
+            <a
+              href="https://x.com/nama21yo?t=DNFSYpiAMyB9yES5rbS9Lw&s=09"
+              target="_blank"
+            >
+              <img
+                src="./images/icons/square-x-twitter-brands-solid.svg"
+                alt="Twitter"
+              />
+            </a>
+          </div>
+          <a href="./files/Natnael-Resume.pdf" download class="btn"
+            >See Resume</a
           >
-            <img
-              src="./images/icons/linkedin-brands-solid.svg"
-              alt="LinkedIn"
-            />
-          </a>
-          <a href="https://wa.me/+251969429408" target="_blank">
-            <img
-              src="./images/icons/whatsapp-brands-solid.svg"
-              alt="WhatsApp"
-            />
-          </a>
-          <a href="https://github.com/Nama21yo/" target="_blank">
-            <img src="./images/icons/github-brands-solid.svg" alt="GitHub" />
-          </a>
-          <a href="https://discordapp.com/users/natnael05273" target="_blank">
-            <img src="./images/icons/discord-brands-solid.svg" alt="Discord" />
-          </a>
-          <a
-            href="https://x.com/nama21yo?t=DNFSYpiAMyB9yES5rbS9Lw&s=09"
-            target="_blank"
-          >
-            <img
-              src="./images/icons/square-x-twitter-brands-solid.svg"
-              alt="Twitter"
-            />
-          </a>
         </div>
-        <div>
-          <a href="./files/Natnael-Resume.pdf" download>Download Resume</a>
-        </div>
-      </section>
+      </div>
     </main>
 
-    <!-- Footer Section -->
     <footer>
-      <section>
+      <div class="footer-info">
         <div>
           <h5>Natnael Yohanes</h5>
           <p>Software Engineer</p>
         </div>
         <div>
           <h5>Phone No.</h5>
-          <p>
-            <a href="tel:+251969429408">(+251) 969429408</a>
-          </p>
+          <p>(+251) 969429408</p>
         </div>
         <div>
           <h5>Email</h5>
-          <p>
-            <a href="mailto:mataniayohanes@gmail.com"
-              >mataniayohanes@gmail.com</a
-            >
-          </p>
+          <p>mataniayohanes@gmail.com</p>
         </div>
         <div>
           <h5>Address</h5>
           <p>Addis Ababa, Ethiopia</p>
         </div>
-      </section>
-      <div>
+      </div>
+      <div class="social-links">
         <a
           href="https://www.linkedin.com/in/natnael-yohanes-163ba02b6"
           target="_blank"
@@ -153,5 +181,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

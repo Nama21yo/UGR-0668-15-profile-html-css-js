@@ -5,167 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natnael - Portfolio</title>
     <link rel="icon" href="./images/logo.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="./styles/project.css" />
   </head>
   <body>
-    <nav aria-label="Main Navigation">
-      <h2>Natnael Yohanes</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
+    <header class="hero-section">
+      <nav class="navbar">
+        <div class="logo">Natnael Yohanes</div>
+        <ul class="nav-links" id="menu__list">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Services.html">Service</a></li>
+          <li><a href="./Projects.html">Projects</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <img
+            src="./images/icons/bars-solid.svg"
+            alt="bars-solid"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <section class="projects-section">
       <h2>Projects</h2>
 
-      <!-- Netflix Clone Section -->
-      <section>
-        <div>
-          <div>
-            <h4>Netflix Clone</h4>
-            <p>
-              A web application replicating Netflix's interface, developed using
-              React and The Movie Database (TMDb) API for fetching movie data.
-              The project demonstrates skills in React, API integration, and
-              responsive design.
-            </p>
-            <div>
-              <a
-                href="https://github.com/Nama21yo/Netflix-React.git"
-                target="_blank"
-              >
-                <img
-                  src="./images/icons/github-brands-solid.svg"
-                  alt="GitHub Repository for Netflix Clone"
-                />
-              </a>
-              <a
-                href="https://quiet-pothos-361abe.netlify.app/"
-                target="_blank"
-              >
-                <img
-                  src="./images/icons/demo.png"
-                  alt="Live Demo for Netflix Clone"
-                />
-              </a>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="./images/netflix.jpg" alt="Netflix Clone Screenshot" />
-            </div>
-            <div>
-              <video controls width="600">
-                <source src="./videos/Netflix-React.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Netflix-Clone</h3>
+          <p>
+            A web application replicating Netflix's interface, developed using
+            React and The Movie Database (TMDb) API for fetching movie data. The
+            project demonstrates skills in React, API integration, and
+            responsive design.
+          </p>
+          <div class="project-links">
+            <a href="https://quiet-pothos-361abe.netlify.app/" target="_blank">
+              <img
+                src="./images/icons/share-solid.svg"
+                alt="Live Demo for Netflix Clone"
+              />
+            </a>
+            <a
+              href="https://github.com/Nama21yo/Netflix-React.git"
+              target="_blank"
+            >
+              <img
+                src="./images/icons/code-solid.svg"
+                alt="GitHub Repository for Netflix Clone"
+              />
+            </a>
           </div>
         </div>
-      </section>
+        <div class="project-image">
+          <img src="./images/netflix.jpg" alt="Netflix Clone Screenshot" />
+        </div>
+        <div class="project-demo">
+          <video controls width="500">
+            <source src="./videos/Netflix-React.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
 
-      <!-- Amazon Clone Section -->
-      <section>
-        <div>
-          <div>
-            <h4>Amazon Clone</h4>
-            <p>
-              An e-commerce website clone of Amazon, built using React, Stripe
-              for payment integration, Firebase for backend services, and REST
-              API for image handling. It showcases skills in full-stack
-              development and third-party API integration.
-            </p>
-            <div>
-              <a
-                href="https://github.com/Nama21yo/Amazon-React.git"
-                target="_blank"
-              >
-                <img
-                  src="./images/icons/github-brands-solid.svg"
-                  alt="GitHub Repository for Amazon Clone"
-                />
-              </a>
-              <a
-                href="https://luminous-lokum-f51278.netlify.app/"
-                target="_blank"
-              >
-                <img
-                  src="./images/icons/demo.png"
-                  alt="Live Demo for Amazon Clone"
-                />
-              </a>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="./images/amazon-pr.jpg" alt="Amazon Clone Screenshot" />
-            </div>
-            <div>
-              <video controls width="600">
-                <source src="./videos/Amazon-React.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Amazon-Clone</h3>
+          <p>
+            An e-commerce website clone of Amazon, built using React, Stripe for
+            payment integration, Firebase for back-end services, and REST API
+            for image handling.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://luminous-lokum-f51278.netlify.app/"
+              target="_blank"
+            >
+              <img
+                src="./images/icons/share-solid.svg"
+                alt="Live Demo for Amazon Clone"
+              />
+            </a>
+            <a
+              href="https://github.com/Nama21yo/Amazon-React.git"
+              target="_blank"
+            >
+              <img
+                src="./images/icons/code-solid.svg"
+                alt="GitHub Repository for Amazon Clone"
+              />
+            </a>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="project-image">
+          <img src="./images/amazon-pr.jpg" alt="Amazon Clone Screenshot" />
+        </div>
+        <div class="project-demo">
+          <video controls width="600">
+            <source src="./videos/Amazon-React.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer Section -->
     <footer>
-      <section>
+      <div class="footer-info">
         <div>
           <h5>Natnael Yohanes</h5>
           <p>Software Engineer</p>
         </div>
         <div>
           <h5>Phone No.</h5>
-          <p>
-            <a href="tel:+251969429408">(+251) 969429408</a>
-          </p>
+          <p>(+251) 969429408</p>
         </div>
         <div>
           <h5>Email</h5>
-          <p>
-            <a href="mailto:mataniayohanes@gmail.com"
-              >mataniayohanes@gmail.com</a
-            >
-          </p>
+          <p>mataniayohanes@gmail.com</p>
         </div>
         <div>
           <h5>Address</h5>
           <p>Addis Ababa, Ethiopia</p>
         </div>
-      </section>
-      <div>
+      </div>
+      <div class="social-links">
         <a
           href="https://www.linkedin.com/in/natnael-yohanes-163ba02b6"
           target="_blank"
         >
-          <img
-            src="./images/icons/linkedin-brands-solid.svg"
-            alt="LinkedIn Profile"
-          />
+          <img src="./images/icons/linkedin-brands-solid.svg" alt="LinkedIn" />
         </a>
         <a href="https://wa.me/+251969429408" target="_blank">
-          <img
-            src="./images/icons/whatsapp-brands-solid.svg"
-            alt="WhatsApp Contact"
-          />
+          <img src="./images/icons/whatsapp-brands-solid.svg" alt="WhatsApp" />
         </a>
         <a href="https://github.com/Nama21yo/" target="_blank">
-          <img
-            src="./images/icons/github-brands-solid.svg"
-            alt="GitHub Profile"
-          />
+          <img src="./images/icons/github-brands-solid.svg" alt="GitHub" />
         </a>
         <a href="https://discordapp.com/users/natnael05273" target="_blank">
-          <img
-            src="./images/icons/discord-brands-solid.svg"
-            alt="Discord Profile"
-          />
+          <img src="./images/icons/discord-brands-solid.svg" alt="Discord" />
         </a>
         <a
           href="https://x.com/nama21yo?t=DNFSYpiAMyB9yES5rbS9Lw&s=09"
@@ -173,10 +151,11 @@
         >
           <img
             src="./images/icons/square-x-twitter-brands-solid.svg"
-            alt="Twitter Profile"
+            alt="Twitter"
           />
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
